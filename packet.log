@@ -1,1 +1,977 @@
 
+
+Full Hex Dump For Packet Below, debug mode
+Total Bytes: 298
+ 1  0  0 20 DA  0  0  0 DA  0  0  0 50  0 50  0 | ... ........P.P.
+B6 F0 32 55 7C E3 5E  F  0  0  0  0  0  0  0  0 | ..2U|.^.........
+11  0  0  4  4  0  0  0 23  3  3  6  0  0 95 C1 | ........#.......
+78 74  0  0  0  0  0  0  0  0  0  0  0  0  0  0 | xt..............
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 | ................
+ 0  0 1A  0 2F 48  0  0 95 C1 78 74  0  0  0  0 | ..../H....xt....
+10  2 9E  9 C0  0 DA  0  0  0 80  0  0  0 FF FF | ................
+FF FF FF FF  0 26 88 EA 84  8  0 26 88 EA 84  8 | .....&.....&....
+20 31 87 C1 78 74  7  0  0  0 64  0  1  4  0  B |  1..xt....d.....
+6D 79 71 77 65 73 74 30 33 31 31  1  8 82 84 8B | myqwest0311.....
+96 24 30 48 6C  3  1  B  5  4  0  1  0  0 2A  1 | .$0Hl.........*.
+ 0 2F  1  0 32  4  C 12 18 60 2D 1A EC 18 1B FF | ./..2....`-.....
+FF  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 | ................
+ 0  0  0  0  0  0 3D 16  B  0 15  0  0  0  0  0 | ......=.........
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0 4A  E | ..............J.
+14  0  A  0 2C  1 C8  0 14  0  5  0 19  0 7F  1 | ....,...........
+ 1 DD  9  0 10 18  2  3 F0  4  0  0 DD 18  0 50 | ...............P
+F2  2  1  1 80  0  3 A4  0  0 27 A4  0  0 42 43 | ..........'...BC
+5E  0 62 32 2F  0 56 C4 84 5E                   | ^.b2/.V..^
+
+
+
+***************************802.11 MGMT Frame***************************
+
+802.11 Management Frame Time Stamp: Sat Apr 18 18:03:04 2015
+
+~~~TPacket Header(pre-pended)~~~
+Status:       536870913: Unknown
+Length:       218
+Snap Len:     218
+MAC Offset:   80
+NET Offset:   80
+Seconds:      1429401782
+Nano Seconds: 257876860
+VLAN TCI:     0
+
+~~~Socket Address Link Layer Header(pre-pended)~~~
+Family:            17: AF_PACKET
+Protocol:          4: 802.2 Logical Link Layer Frame (LLC)
+If Index:          4
+Hardware Type:     803: IEEE 802.11 + Radiotap Header
+Packet Type:       3: Packet Otherhost(to someone else)
+Hardware Addr Len: 6
+Hardware Address:  00:00:95:C1:78:74
+
+~~~ieee 802.11 Radio Tap Header(pre-pended)~~~
+Version:             0
+Length:              26
+Present Total:       18479
+TSFT(mactime):       1
+Flags:               1
+Rate:                1
+Channel + Flags:     1
+FHSS:                0
+DBM Antenna Signal:  1
+DBM Antenna Noise:   0
+Lock Quality:        0
+DBM TX Attenuation:  0
+DB TX Attenuation:   0
+DBM TX Power:        0
+Antenna Index:       1
+DB Antenna Signal:   0
+DB Antenna Noise:    0
+RX Flags:            1
+TX Flags:            0
+RTS Retries:         0
+Data Retries:        0
+MCS:                 0
+A-MPDU Stats:        0
+VHT:                 0
+Radiotap Namespace:  0
+Vendor Namespace:    0
+Bitmap Extension:    0
+~Present Information~
+TSFT(mactime):       1954070933
+Flags Total:         16
+                     Frame Includes FCS
+RX Rate:             1 Mb/s
+Channel:             2.462 GHz
+Channel Flags Total: 192
+                     OFDM Channel
+                     2 GHz Spectrum Channel
+Antenna Signal:      -38 dBm
+Antenna Index:       0
+
+~~~ieee 802.11 Header~~~
+Frame Control Total:      128
+Protocol:                 0
+To   Distr System Flag:   0
+From Distr System Flag:   0
+More Fragments Flag:      0
+Retry Flag:               0
+Power Management Flag:    0
+More Data Flag:           0
+Privacy Flag (WPA/WEP...) 0
+Order Flag (802.11n):     0
+Frame Type:               0:  Management Frame
+Duration:                 0
+Source Address:           0:26:88:ea:84:8
+Destination Address:      ff:ff:ff:ff:ff:ff
+BSSID:                    0:26:88:ea:84:8
+Sequence Control:         786
+Fragment Offset:          0
+Frame Subtype:            8:  Beacon
+Timestamp:                32018841991
+Beacon Interval:          102 ms
+Capability Info:          1025
+
+~MGMT Information Elements~
+Element ID:               0: SSID
+Length:                   11
+SSID:                     myqwest0311
+
+Element ID:               1: Rates
+Length:                   8
+IE Rates:                 1 Mb/s - Basic
+                          2 Mb/s - Basic
+                          5.5 Mb/s - Basic
+                          11 Mb/s - Basic
+                          18 Mb/s
+                          24 Mb/s
+                          36 Mb/s
+                          54 Mb/s
+
+Element ID:               3: DS Parameter Set(Channel No.)
+Length:                   1
+Current Channel:          11
+
+Element ID:               5: Traffic Indication Map(TIM)
+Length:                   4
+DTIM Count:               0
+DTIM Period:              1
+Bitmap Control:           No Buffered Data
+Partial Virtual Bitmap:   0
+
+Element ID:               42: ERP(PHY-Level Flags)
+Length:                   1
+ERP Info Sum:             0
+Barker Preamble Mode:     0
+Use Protection:           0
+Non-ERP Present:          0
+
+Element ID:               47: ERP(PHY-Level Flags)
+Length:                   1
+ERP Info Sum:             0
+Barker Preamble Mode:     0
+Use Protection:           0
+Non-ERP Present:          0
+
+Element ID:               50: Extension Rates
+Length:                   4
+Extended Rates:           6 Mb/s
+                          9 Mb/s
+                          12 Mb/s
+                          48 Mb/s
+
+Element ID:               45: HT Capabilities
+Length:                   26
+HT Capabilities Info Sum: 6380
+LDPC Codeing Capability:  0
+Channel Width Set:        0: 20Mhz Only Operation
+Spatial Multiplexing PS:  1: Dynamic SM Power Save Mode
+HT-Greenfield:            0
+Short GI For 20Mhz:       1
+Short GU For 40Mhz:       1
+TX STBC:                  1
+RX STBC:                  0: Disabled
+HT-Delayed Block Ack:     0
+Max A-MSDU Length:        1
+DSSS/CCK Mode In 40Mhz:   1
+PSMP Support:             0
+40Mhz Intolerant:         0
+L-SIG TXOP Protection:    0
+A-MPDU Settings Sum:      27
+Max A-MPDU Size:          1: 16K
+Min MPDU Start Spacing:   2: 1/2 us
+MPDU Restricted Bit Sum:  0
+
+Element ID:               61: HT Operations
+Length:                   22
+
+Element ID:               74: Overlapping BSS Scan
+Length:                   14
+
+Element ID:               127: Extended Capabilities(CIF)
+Length:                   1
+
+Element ID:               221: Vendor Specific
+Length:                   9
+OUI:                      
+
+Element ID:               221: Vendor Specific
+Length:                   24
+OUI:                      
+
+
+Frame Check Sequence: 1585759318
+
+~~~Data Dump~~~
+TPacket Header Dump(pre-pended)
+Total Bytes: 28
+ 1  0  0 20 DA  0  0  0 DA  0  0  0 50  0 50  0 | ... ........P.P.
+B6 F0 32 55 7C E3 5E  F  0  0  0  0             | ..2U|.^.....
+
+Socket Address Link Layer Header(pre-pended)
+Total Bytes: 20
+11  0  0  4  4  0  0  0 23  3  3  6  0  0 95 C1 | ........#.......
+78 74  0  0                                     | xt..
+
+ieee 802.11 Radio Tap Header Dump(pre-pended)
+Total Bytes: 26
+ 0  0 1A  0 2F 48  0  0 95 C1 78 74  0  0  0  0 | ..../H....xt....
+10  2 9E  9 C0  0 DA  0  0  0                   | ..........
+
+ieee 802.11 Header Dump
+Total Bytes: 36
+80  0  0  0 FF FF FF FF FF FF  0 26 88 EA 84  8 | ...........&....
+ 0 26 88 EA 84  8 20 31 87 C1 78 74  7  0  0  0 | .&.... 1..xt....
+64  0  1  4                                     | d...
+
+Information Elements Dump
+Total Bytes: 156
+ 0  B 6D 79 71 77 65 73 74 30 33 31 31  1  8 82 | ..myqwest0311...
+84 8B 96 24 30 48 6C  3  1  B  5  4  0  1  0  0 | ...$0Hl.........
+2A  1  0 2F  1  0 32  4  C 12 18 60 2D 1A EC 18 | *../..2....`-...
+1B FF FF  0  0  0  0  0  0  0  0  0  0  0  0  0 | ................
+ 0  0  0  0  0  0  0  0 3D 16  B  0 15  0  0  0 | ........=.......
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 | ................
+4A  E 14  0  A  0 2C  1 C8  0 14  0  5  0 19  0 | J.....,.........
+7F  1  1 DD  9  0 10 18  2  3 F0  4  0  0 DD 18 | ................
+ 0 50 F2  2  1  1 80  0  3 A4  0  0 27 A4  0  0 | .P..........'...
+42 43 5E  0 62 32 2F  0 56 C4 84 5E             | BC^.b2/.V..^
+
+Frame Check Sequence Dump
+Total Bytes: 4
+56 C4 84 5E                                     | V..^
+
+***********************************************************************
+
+Full Hex Dump For Packet Below, debug mode
+Total Bytes: 134
+ 1  0  0 20 36  0  0  0 36  0  0  0 50  0 50  0 | ... 6...6...P.P.
+B6 F0 32 55 F4 56 3A 14  0  0  0  0  0  0  0  0 | ..2U.V:.........
+11  0  0  4  4  0  0  0 23  3  3  6  0  0 1F  5 | ........#.......
+7A 74  0  0  0  0  0  0  0  0  0  0  0  0  0  0 | zt..............
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 | ................
+ 0  0 1A  0 2F 48  0  0 1F  5 7A 74  0  0  0  0 | ..../H....zt....
+10  B 9E  9 C0  0 DC  0  0  0 48 11 DF  0  0 26 | ..........H....&
+88 EA 84  8 FC C2 DE  2 CF 2D  0 26 88 EA 84  8 | .........-.&....
+C0 51 78 6B 50 2D                               | .QxkP-
+
+
+
+***********************802.11 Data Control Frame***********************
+
+802.11 Data Control Frame Time Stamp: Sat Apr 18 18:03:04 2015
+
+~~~TPacket Header(pre-pended)~~~
+Status:       536870913: Unknown
+Length:       54
+Snap Len:     54
+MAC Offset:   80
+NET Offset:   80
+Seconds:      1429401782
+Nano Seconds: 339367668
+VLAN TCI:     0
+
+~~~Socket Address Link Layer Header(pre-pended)~~~
+Family:            17: AF_PACKET
+Protocol:          4: 802.2 Logical Link Layer Frame (LLC)
+If Index:          4
+Hardware Type:     803: IEEE 802.11 + Radiotap Header
+Packet Type:       3: Packet Otherhost(to someone else)
+Hardware Addr Len: 6
+Hardware Address:  00:00:1F:05:7A:74
+
+~~~ieee 802.11 Radio Tap Header(pre-pended)~~~
+Version:             0
+Length:              26
+Present Total:       18479
+TSFT(mactime):       1
+Flags:               1
+Rate:                1
+Channel + Flags:     1
+FHSS:                0
+DBM Antenna Signal:  1
+DBM Antenna Noise:   0
+Lock Quality:        0
+DBM TX Attenuation:  0
+DB TX Attenuation:   0
+DBM TX Power:        0
+Antenna Index:       1
+DB Antenna Signal:   0
+DB Antenna Noise:    0
+RX Flags:            1
+TX Flags:            0
+RTS Retries:         0
+Data Retries:        0
+MCS:                 0
+A-MPDU Stats:        0
+VHT:                 0
+Radiotap Namespace:  0
+Vendor Namespace:    0
+Bitmap Extension:    0
+~Present Information~
+TSFT(mactime):       1954153759
+Flags Total:         16
+                     Frame Includes FCS
+RX Rate:             5.5 Mb/s
+Channel:             2.462 GHz
+Channel Flags Total: 192
+                     OFDM Channel
+                     2 GHz Spectrum Channel
+Antenna Signal:      -36 dBm
+Antenna Index:       0
+
+~~~ieee 802.11 Header~~~
+Frame Control Total:      4424
+Protocol:                 0
+To   Distr System Flag:   1
+From Distr System Flag:   0
+More Fragments Flag:      0
+Retry Flag:               0
+Power Management Flag:    1
+More Data Flag:           0
+Privacy Flag (WPA/WEP...) 0
+Order Flag (802.11n):     0
+Frame Type:               2:  DATA Frame
+Frame Subtype:            4:  No Data
+Flow:                     STA -> AP
+Duration:                 223
+Basic Service Set ID:     0:26:88:ea:84:8
+Source Address:           fc:c2:de:2:cf:2d
+Destination Address:      0:26:88:ea:84:8
+Sequence Control:         1308
+Fragment Offset:          0
+
+Frame Check Sequence: 760245112
+
+~~~Data Dump~~~
+TPacket Header Dump(pre-pended)
+Total Bytes: 28
+ 1  0  0 20 36  0  0  0 36  0  0  0 50  0 50  0 | ... 6...6...P.P.
+B6 F0 32 55 F4 56 3A 14  0  0  0  0             | ..2U.V:.....
+
+Socket Address Link Layer Header(pre-pended)
+Total Bytes: 20
+11  0  0  4  4  0  0  0 23  3  3  6  0  0 1F  5 | ........#.......
+7A 74  0  0                                     | zt..
+
+ieee 802.11 Radio Tap Header Dump(pre-pended)
+Total Bytes: 26
+ 0  0 1A  0 2F 48  0  0 1F  5 7A 74  0  0  0  0 | ..../H....zt....
+10  B 9E  9 C0  0 DC  0  0  0                   | ..........
+
+ieee 802.11 Header Dump
+Total Bytes: 24
+48 11 DF  0  0 26 88 EA 84  8 FC C2 DE  2 CF 2D | H....&.........-
+ 0 26 88 EA 84  8 C0 51                         | .&.....Q
+
+Frame Check Sequence Dump
+Total Bytes: 4
+78 6B 50 2D                                     | xkP-
+
+***********************************************************************
+
+Full Hex Dump For Packet Below, debug mode
+Total Bytes: 134
+ 1  0  0 20 36  0  0  0 36  0  0  0 50  0 50  0 | ... 6...6...P.P.
+B6 F0 32 55  A 45 22 15  0  0  0  0  0  0  0  0 | ..2U.E".........
+11  0  0  4  4  0  0  0 23  3  3  6  0  0 83 40 | ........#......@
+7A 74  0  0  0  0  0  0  0  0  0  0  0  0  0  0 | zt..............
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 | ................
+ 0  0 1A  0 2F 48  0  0 83 40 7A 74  0  0  0  0 | ..../H...@zt....
+10  B 9E  9 C0  0 FC  0  0  0 48 19 DF  0  0 26 | ..........H....&
+88 EA 84  8 FC C2 DE  2 CF 2D  0 26 88 EA 84  8 | .........-.&....
+C0 51 5E 28 E9 2D                               | .Q^(.-
+
+
+
+***********************802.11 Data Control Frame***********************
+
+802.11 Data Control Frame Time Stamp: Sat Apr 18 18:03:04 2015
+
+~~~TPacket Header(pre-pended)~~~
+Status:       536870913: Unknown
+Length:       54
+Snap Len:     54
+MAC Offset:   80
+NET Offset:   80
+Seconds:      1429401782
+Nano Seconds: 354567434
+VLAN TCI:     0
+
+~~~Socket Address Link Layer Header(pre-pended)~~~
+Family:            17: AF_PACKET
+Protocol:          4: 802.2 Logical Link Layer Frame (LLC)
+If Index:          4
+Hardware Type:     803: IEEE 802.11 + Radiotap Header
+Packet Type:       3: Packet Otherhost(to someone else)
+Hardware Addr Len: 6
+Hardware Address:  00:00:83:40:7A:74
+
+~~~ieee 802.11 Radio Tap Header(pre-pended)~~~
+Version:             0
+Length:              26
+Present Total:       18479
+TSFT(mactime):       1
+Flags:               1
+Rate:                1
+Channel + Flags:     1
+FHSS:                0
+DBM Antenna Signal:  1
+DBM Antenna Noise:   0
+Lock Quality:        0
+DBM TX Attenuation:  0
+DB TX Attenuation:   0
+DBM TX Power:        0
+Antenna Index:       1
+DB Antenna Signal:   0
+DB Antenna Noise:    0
+RX Flags:            1
+TX Flags:            0
+RTS Retries:         0
+Data Retries:        0
+MCS:                 0
+A-MPDU Stats:        0
+VHT:                 0
+Radiotap Namespace:  0
+Vendor Namespace:    0
+Bitmap Extension:    0
+~Present Information~
+TSFT(mactime):       1954168963
+Flags Total:         16
+                     Frame Includes FCS
+RX Rate:             5.5 Mb/s
+Channel:             2.462 GHz
+Channel Flags Total: 192
+                     OFDM Channel
+                     2 GHz Spectrum Channel
+Antenna Signal:      -4 dBm
+Antenna Index:       0
+
+~~~ieee 802.11 Header~~~
+Frame Control Total:      6472
+Protocol:                 0
+To   Distr System Flag:   1
+From Distr System Flag:   0
+More Fragments Flag:      0
+Retry Flag:               1
+Power Management Flag:    1
+More Data Flag:           0
+Privacy Flag (WPA/WEP...) 0
+Order Flag (802.11n):     0
+Frame Type:               2:  DATA Frame
+Frame Subtype:            4:  No Data
+Flow:                     STA -> AP
+Duration:                 223
+Basic Service Set ID:     0:26:88:ea:84:8
+Source Address:           fc:c2:de:2:cf:2d
+Destination Address:      0:26:88:ea:84:8
+Sequence Control:         1308
+Fragment Offset:          0
+
+Frame Check Sequence: 770254942
+
+~~~Data Dump~~~
+TPacket Header Dump(pre-pended)
+Total Bytes: 28
+ 1  0  0 20 36  0  0  0 36  0  0  0 50  0 50  0 | ... 6...6...P.P.
+B6 F0 32 55  A 45 22 15  0  0  0  0             | ..2U.E".....
+
+Socket Address Link Layer Header(pre-pended)
+Total Bytes: 20
+11  0  0  4  4  0  0  0 23  3  3  6  0  0 83 40 | ........#......@
+7A 74  0  0                                     | zt..
+
+ieee 802.11 Radio Tap Header Dump(pre-pended)
+Total Bytes: 26
+ 0  0 1A  0 2F 48  0  0 83 40 7A 74  0  0  0  0 | ..../H...@zt....
+10  B 9E  9 C0  0 FC  0  0  0                   | ..........
+
+ieee 802.11 Header Dump
+Total Bytes: 24
+48 19 DF  0  0 26 88 EA 84  8 FC C2 DE  2 CF 2D | H....&.........-
+ 0 26 88 EA 84  8 C0 51                         | .&.....Q
+
+Frame Check Sequence Dump
+Total Bytes: 4
+5E 28 E9 2D                                     | ^(.-
+
+***********************************************************************
+
+Full Hex Dump For Packet Below, debug mode
+Total Bytes: 120
+ 1  0  0 20 28  0  0  0 28  0  0  0 50  0 50  0 | ... (...(...P.P.
+B6 F0 32 55 45 A9 25 15  0  0  0  0  0  0  0  0 | ..2UE.%.........
+11  0  0  4  4  0  0  0 23  3  3  6  0  0 64 41 | ........#.....dA
+7A 74  0  0  0  0  0  0  0  0  0  0  0  0  0  0 | zt..............
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 | ................
+ 0  0 1A  0 2F 48  0  0 64 41 7A 74  0  0  0  0 | ..../H..dAzt....
+10  B 9E  9 C0  0 FC  0  0  0 D4  0  0  0 FC C2 | ................
+DE  2 CF 2D AC A8 47 88                         | ...-..G.
+
+
+
+***************************802.11 CTRL Frame***************************
+
+802.11 Control Frame Time Stamp: Sat Apr 18 18:03:04 2015
+
+~~~TPacket Header(pre-pended)~~~
+Status:       536870913: Unknown
+Length:       40
+Snap Len:     40
+MAC Offset:   80
+NET Offset:   80
+Seconds:      1429401782
+Nano Seconds: 354789701
+VLAN TCI:     0
+
+~~~Socket Address Link Layer Header(pre-pended)~~~
+Family:            17: AF_PACKET
+Protocol:          4: 802.2 Logical Link Layer Frame (LLC)
+If Index:          4
+Hardware Type:     803: IEEE 802.11 + Radiotap Header
+Packet Type:       3: Packet Otherhost(to someone else)
+Hardware Addr Len: 6
+Hardware Address:  00:00:64:41:7A:74
+
+~~~ieee 802.11 Radio Tap Header(pre-pended)~~~
+Version:             0
+Length:              26
+Present Total:       18479
+TSFT(mactime):       1
+Flags:               1
+Rate:                1
+Channel + Flags:     1
+FHSS:                0
+DBM Antenna Signal:  1
+DBM Antenna Noise:   0
+Lock Quality:        0
+DBM TX Attenuation:  0
+DB TX Attenuation:   0
+DBM TX Power:        0
+Antenna Index:       1
+DB Antenna Signal:   0
+DB Antenna Noise:    0
+RX Flags:            1
+TX Flags:            0
+RTS Retries:         0
+Data Retries:        0
+MCS:                 0
+A-MPDU Stats:        0
+VHT:                 0
+Radiotap Namespace:  0
+Vendor Namespace:    0
+Bitmap Extension:    0
+~Present Information~
+TSFT(mactime):       1954169188
+Flags Total:         16
+                     Frame Includes FCS
+RX Rate:             5.5 Mb/s
+Channel:             2.462 GHz
+Channel Flags Total: 192
+                     OFDM Channel
+                     2 GHz Spectrum Channel
+Antenna Signal:      -4 dBm
+Antenna Index:       0
+
+~~~ieee 802.11 Header~~~
+Frame Control Total:      212
+Protocol:                 0
+To   Distr System Flag:   0
+From Distr System Flag:   0
+More Fragments Flag:      0
+Retry Flag:               0
+Power Management Flag:    0
+More Data Flag:           0
+Privacy Flag (WPA/WEP...) 0
+Order Flag (802.11n):     0
+Frame Type:               1:  Control Frame
+Frame Subtype:            13: Acknowledgment(ACK)
+Duration:                 0
+Receiver Address:         fc:c2:de:2:cf:2d
+
+Frame Check Sequence: 2286397612
+
+~~~Data Dump~~~
+TPacket Header Dump(pre-pended)
+Total Bytes: 28
+ 1  0  0 20 28  0  0  0 28  0  0  0 50  0 50  0 | ... (...(...P.P.
+B6 F0 32 55 45 A9 25 15  0  0  0  0             | ..2UE.%.....
+
+Socket Address Link Layer Header(pre-pended)
+Total Bytes: 20
+11  0  0  4  4  0  0  0 23  3  3  6  0  0 64 41 | ........#.....dA
+7A 74  0  0                                     | zt..
+
+ieee 802.11 Radio Tap Header Dump(pre-pended)
+Total Bytes: 26
+ 0  0 1A  0 2F 48  0  0 64 41 7A 74  0  0  0  0 | ..../H..dAzt....
+10  B 9E  9 C0  0 FC  0  0  0                   | ..........
+
+ieee 802.11 Header Dump
+Total Bytes: 10
+D4  0  0  0 FC C2 DE  2 CF 2D                   | .........-
+
+Frame Check Sequence Dump
+Total Bytes: 4
+AC A8 47 88                                     | ..G.
+
+***********************************************************************
+
+Full Hex Dump For Packet Below, debug mode
+Total Bytes: 120
+ 1  0  0 20 28  0  0  0 28  0  0  0 50  0 50  0 | ... (...(...P.P.
+B6 F0 32 55 60 5B 31 15  0  0  0  0  0  0  0  0 | ..2U`[1.........
+11  0  0  4  4  0  0  0 23  3  3  6  0  0 6B 44 | ........#.....kD
+7A 74  0  0  0  0  0  0  0  0  0  0  0  0  0  0 | zt..............
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 | ................
+ 0  0 1A  0 2F 48  0  0 6B 44 7A 74  0  0  0  0 | ..../H..kDzt....
+10 18 9E  9 C0  0 D9  0  0  0 D4  0  0  0 1C 3E | ...............>
+84 8A 4C 26 8C B9 2D DF                         | ..L&..-.
+
+
+
+***************************802.11 CTRL Frame***************************
+
+802.11 Control Frame Time Stamp: Sat Apr 18 18:03:04 2015
+
+~~~TPacket Header(pre-pended)~~~
+Status:       536870913: Unknown
+Length:       40
+Snap Len:     40
+MAC Offset:   80
+NET Offset:   80
+Seconds:      1429401782
+Nano Seconds: 355556192
+VLAN TCI:     0
+
+~~~Socket Address Link Layer Header(pre-pended)~~~
+Family:            17: AF_PACKET
+Protocol:          4: 802.2 Logical Link Layer Frame (LLC)
+If Index:          4
+Hardware Type:     803: IEEE 802.11 + Radiotap Header
+Packet Type:       3: Packet Otherhost(to someone else)
+Hardware Addr Len: 6
+Hardware Address:  00:00:6B:44:7A:74
+
+~~~ieee 802.11 Radio Tap Header(pre-pended)~~~
+Version:             0
+Length:              26
+Present Total:       18479
+TSFT(mactime):       1
+Flags:               1
+Rate:                1
+Channel + Flags:     1
+FHSS:                0
+DBM Antenna Signal:  1
+DBM Antenna Noise:   0
+Lock Quality:        0
+DBM TX Attenuation:  0
+DB TX Attenuation:   0
+DBM TX Power:        0
+Antenna Index:       1
+DB Antenna Signal:   0
+DB Antenna Noise:    0
+RX Flags:            1
+TX Flags:            0
+RTS Retries:         0
+Data Retries:        0
+MCS:                 0
+A-MPDU Stats:        0
+VHT:                 0
+Radiotap Namespace:  0
+Vendor Namespace:    0
+Bitmap Extension:    0
+~Present Information~
+TSFT(mactime):       1954169963
+Flags Total:         16
+                     Frame Includes FCS
+RX Rate:             12 Mb/s
+Channel:             2.462 GHz
+Channel Flags Total: 192
+                     OFDM Channel
+                     2 GHz Spectrum Channel
+Antenna Signal:      -39 dBm
+Antenna Index:       0
+
+~~~ieee 802.11 Header~~~
+Frame Control Total:      212
+Protocol:                 0
+To   Distr System Flag:   0
+From Distr System Flag:   0
+More Fragments Flag:      0
+Retry Flag:               0
+Power Management Flag:    0
+More Data Flag:           0
+Privacy Flag (WPA/WEP...) 0
+Order Flag (802.11n):     0
+Frame Type:               1:  Control Frame
+Frame Subtype:            13: Acknowledgment(ACK)
+Duration:                 0
+Receiver Address:         1c:3e:84:8a:4c:26
+
+Frame Check Sequence: 3744315788
+
+~~~Data Dump~~~
+TPacket Header Dump(pre-pended)
+Total Bytes: 28
+ 1  0  0 20 28  0  0  0 28  0  0  0 50  0 50  0 | ... (...(...P.P.
+B6 F0 32 55 60 5B 31 15  0  0  0  0             | ..2U`[1.....
+
+Socket Address Link Layer Header(pre-pended)
+Total Bytes: 20
+11  0  0  4  4  0  0  0 23  3  3  6  0  0 6B 44 | ........#.....kD
+7A 74  0  0                                     | zt..
+
+ieee 802.11 Radio Tap Header Dump(pre-pended)
+Total Bytes: 26
+ 0  0 1A  0 2F 48  0  0 6B 44 7A 74  0  0  0  0 | ..../H..kDzt....
+10 18 9E  9 C0  0 D9  0  0  0                   | ..........
+
+ieee 802.11 Header Dump
+Total Bytes: 10
+D4  0  0  0 1C 3E 84 8A 4C 26                   | .....>..L&
+
+Frame Check Sequence Dump
+Total Bytes: 4
+8C B9 2D DF                                     | ..-.
+
+***********************************************************************
+
+Full Hex Dump For Packet Below, debug mode
+Total Bytes: 298
+ 1  0  0 20 DA  0  0  0 DA  0  0  0 50  0 50  0 | ... ........P.P.
+B6 F0 32 55 5D 27 97 15  0  0  0  0  0  0  0  0 | ..2U]'..........
+11  0  0  4  4  0  0  0 23  3  3  6  0  0 33 59 | ........#.....3Y
+7A 74  0  0  0  0  0  0  0  0  0  0  0  0  0  0 | zt..............
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 | ................
+ 0  0 1A  0 2F 48  0  0 33 59 7A 74  0  0  0  0 | ..../H..3Yzt....
+10  2 9E  9 C0  0 FC  0  0  0 80  0  0  0 FF FF | ................
+FF FF FF FF  0 26 88 EA 84  8  0 26 88 EA 84  8 | .....&.....&....
+30 31 28 59 7A 74  7  0  0  0 64  0  1  4  0  B | 01(Yzt....d.....
+6D 79 71 77 65 73 74 30 33 31 31  1  8 82 84 8B | myqwest0311.....
+96 24 30 48 6C  3  1  B  5  4  0  1  0  0 2A  1 | .$0Hl.........*.
+ 0 2F  1  0 32  4  C 12 18 60 2D 1A EC 18 1B FF | ./..2....`-.....
+FF  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 | ................
+ 0  0  0  0  0  0 3D 16  B  0 15  0  0  0  0  0 | ......=.........
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0 4A  E | ..............J.
+14  0  A  0 2C  1 C8  0 14  0  5  0 19  0 7F  1 | ....,...........
+ 1 DD  9  0 10 18  2  3 F0  4  0  0 DD 18  0 50 | ...............P
+F2  2  1  1 80  0  3 A4  0  0 27 A4  0  0 42 43 | ..........'...BC
+5E  0 62 32 2F  0 5F 30 97 FC                   | ^.b2/._0..
+
+
+
+***************************802.11 MGMT Frame***************************
+
+802.11 Management Frame Time Stamp: Sat Apr 18 18:03:04 2015
+
+~~~TPacket Header(pre-pended)~~~
+Status:       536870913: Unknown
+Length:       218
+Snap Len:     218
+MAC Offset:   80
+NET Offset:   80
+Seconds:      1429401782
+Nano Seconds: 362227549
+VLAN TCI:     0
+
+~~~Socket Address Link Layer Header(pre-pended)~~~
+Family:            17: AF_PACKET
+Protocol:          4: 802.2 Logical Link Layer Frame (LLC)
+If Index:          4
+Hardware Type:     803: IEEE 802.11 + Radiotap Header
+Packet Type:       3: Packet Otherhost(to someone else)
+Hardware Addr Len: 6
+Hardware Address:  00:00:33:59:7A:74
+
+~~~ieee 802.11 Radio Tap Header(pre-pended)~~~
+Version:             0
+Length:              26
+Present Total:       18479
+TSFT(mactime):       1
+Flags:               1
+Rate:                1
+Channel + Flags:     1
+FHSS:                0
+DBM Antenna Signal:  1
+DBM Antenna Noise:   0
+Lock Quality:        0
+DBM TX Attenuation:  0
+DB TX Attenuation:   0
+DBM TX Power:        0
+Antenna Index:       1
+DB Antenna Signal:   0
+DB Antenna Noise:    0
+RX Flags:            1
+TX Flags:            0
+RTS Retries:         0
+Data Retries:        0
+MCS:                 0
+A-MPDU Stats:        0
+VHT:                 0
+Radiotap Namespace:  0
+Vendor Namespace:    0
+Bitmap Extension:    0
+~Present Information~
+TSFT(mactime):       1954175283
+Flags Total:         16
+                     Frame Includes FCS
+RX Rate:             1 Mb/s
+Channel:             2.462 GHz
+Channel Flags Total: 192
+                     OFDM Channel
+                     2 GHz Spectrum Channel
+Antenna Signal:      -4 dBm
+Antenna Index:       0
+
+~~~ieee 802.11 Header~~~
+Frame Control Total:      128
+Protocol:                 0
+To   Distr System Flag:   0
+From Distr System Flag:   0
+More Fragments Flag:      0
+Retry Flag:               0
+Power Management Flag:    0
+More Data Flag:           0
+Privacy Flag (WPA/WEP...) 0
+Order Flag (802.11n):     0
+Frame Type:               0:  Management Frame
+Duration:                 0
+Source Address:           0:26:88:ea:84:8
+Destination Address:      ff:ff:ff:ff:ff:ff
+BSSID:                    0:26:88:ea:84:8
+Sequence Control:         787
+Fragment Offset:          0
+Frame Subtype:            8:  Beacon
+Timestamp:                32018946344
+Beacon Interval:          102 ms
+Capability Info:          1025
+
+~MGMT Information Elements~
+Element ID:               0: SSID
+Length:                   11
+SSID:                     myqwest0311
+
+Element ID:               1: Rates
+Length:                   8
+IE Rates:                 1 Mb/s - Basic
+                          2 Mb/s - Basic
+                          5.5 Mb/s - Basic
+                          11 Mb/s - Basic
+                          18 Mb/s
+                          24 Mb/s
+                          36 Mb/s
+                          54 Mb/s
+
+Element ID:               3: DS Parameter Set(Channel No.)
+Length:                   1
+Current Channel:          11
+
+Element ID:               5: Traffic Indication Map(TIM)
+Length:                   4
+DTIM Count:               0
+DTIM Period:              1
+Bitmap Control:           No Buffered Data
+Partial Virtual Bitmap:   0
+
+Element ID:               42: ERP(PHY-Level Flags)
+Length:                   1
+ERP Info Sum:             0
+Barker Preamble Mode:     0
+Use Protection:           0
+Non-ERP Present:          0
+
+Element ID:               47: ERP(PHY-Level Flags)
+Length:                   1
+ERP Info Sum:             0
+Barker Preamble Mode:     0
+Use Protection:           0
+Non-ERP Present:          0
+
+Element ID:               50: Extension Rates
+Length:                   4
+Extended Rates:           6 Mb/s
+                          9 Mb/s
+                          12 Mb/s
+                          48 Mb/s
+
+Element ID:               45: HT Capabilities
+Length:                   26
+HT Capabilities Info Sum: 6380
+LDPC Codeing Capability:  0
+Channel Width Set:        0: 20Mhz Only Operation
+Spatial Multiplexing PS:  1: Dynamic SM Power Save Mode
+HT-Greenfield:            0
+Short GI For 20Mhz:       1
+Short GU For 40Mhz:       1
+TX STBC:                  1
+RX STBC:                  0: Disabled
+HT-Delayed Block Ack:     0
+Max A-MSDU Length:        1
+DSSS/CCK Mode In 40Mhz:   1
+PSMP Support:             0
+40Mhz Intolerant:         0
+L-SIG TXOP Protection:    0
+A-MPDU Settings Sum:      27
+Max A-MPDU Size:          1: 16K
+Min MPDU Start Spacing:   2: 1/2 us
+MPDU Restricted Bit Sum:  0
+
+Element ID:               61: HT Operations
+Length:                   22
+
+Element ID:               74: Overlapping BSS Scan
+Length:                   14
+
+Element ID:               127: Extended Capabilities(CIF)
+Length:                   1
+
+Element ID:               221: Vendor Specific
+Length:                   9
+OUI:                      
+
+Element ID:               221: Vendor Specific
+Length:                   24
+OUI:                      
+
+
+Frame Check Sequence: 4237766751
+
+~~~Data Dump~~~
+TPacket Header Dump(pre-pended)
+Total Bytes: 28
+ 1  0  0 20 DA  0  0  0 DA  0  0  0 50  0 50  0 | ... ........P.P.
+B6 F0 32 55 5D 27 97 15  0  0  0  0             | ..2U]'......
+
+Socket Address Link Layer Header(pre-pended)
+Total Bytes: 20
+11  0  0  4  4  0  0  0 23  3  3  6  0  0 33 59 | ........#.....3Y
+7A 74  0  0                                     | zt..
+
+ieee 802.11 Radio Tap Header Dump(pre-pended)
+Total Bytes: 26
+ 0  0 1A  0 2F 48  0  0 33 59 7A 74  0  0  0  0 | ..../H..3Yzt....
+10  2 9E  9 C0  0 FC  0  0  0                   | ..........
+
+ieee 802.11 Header Dump
+Total Bytes: 36
+80  0  0  0 FF FF FF FF FF FF  0 26 88 EA 84  8 | ...........&....
+ 0 26 88 EA 84  8 30 31 28 59 7A 74  7  0  0  0 | .&....01(Yzt....
+64  0  1  4                                     | d...
+
+Information Elements Dump
+Total Bytes: 156
+ 0  B 6D 79 71 77 65 73 74 30 33 31 31  1  8 82 | ..myqwest0311...
+84 8B 96 24 30 48 6C  3  1  B  5  4  0  1  0  0 | ...$0Hl.........
+2A  1  0 2F  1  0 32  4  C 12 18 60 2D 1A EC 18 | *../..2....`-...
+1B FF FF  0  0  0  0  0  0  0  0  0  0  0  0  0 | ................
+ 0  0  0  0  0  0  0  0 3D 16  B  0 15  0  0  0 | ........=.......
+ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 | ................
+4A  E 14  0  A  0 2C  1 C8  0 14  0  5  0 19  0 | J.....,.........
+7F  1  1 DD  9  0 10 18  2  3 F0  4  0  0 DD 18 | ................
+ 0 50 F2  2  1  1 80  0  3 A4  0  0 27 A4  0  0 | .P..........'...
+42 43 5E  0 62 32 2F  0 5F 30 97 FC             | BC^.b2/._0..
+
+Frame Check Sequence Dump
+Total Bytes: 4
+5F 30 97 FC                                     | _0..
+
+***********************************************************************
