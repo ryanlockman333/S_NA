@@ -2,7 +2,7 @@
  * sniffer.cpp                                                                               *
  * Description: Sniffer class implementations and miscellaneous.                             *
  * Last Update: 06/09/15                                                                     *
- *                                                                                           *
+ * (C) Copyright - Ryan Lockman                                                                                          *
  * )))~3L1735~(((                                                                            *
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
